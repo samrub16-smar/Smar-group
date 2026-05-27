@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky-scot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a92b5"/>
+      <stop offset="60%" stop-color="#c7d4e3"/>
+      <stop offset="100%" stop-color="#e8d8b8"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d4a3e"/>
+      <stop offset="100%" stop-color="#1a2e26"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4cab3"/>
+      <stop offset="100%" stop-color="#a89b7c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Scottish sky -->
+  <rect width="800" height="640" fill="url(#sky-scot)"/>
+
+  <!-- Soft clouds -->
+  <ellipse cx="180" cy="120" rx="80" ry="20" fill="#FAF7F1" opacity="0.6"/>
+  <ellipse cx="220" cy="135" rx="60" ry="15" fill="#FAF7F1" opacity="0.7"/>
+  <ellipse cx="580" cy="80" rx="100" ry="22" fill="#FAF7F1" opacity="0.5"/>
+  <ellipse cx="620" cy="95" rx="70" ry="16" fill="#FAF7F1" opacity="0.7"/>
+
+  <!-- Distant hills -->
+  <path d="M0 380 Q200 320 380 350 Q540 370 800 330 L800 420 L0 420 Z" fill="#5a7a6a" opacity="0.5"/>
+  <path d="M0 410 Q150 380 320 395 Q500 405 800 380 L800 440 L0 440 Z" fill="#3d5a4e" opacity="0.7"/>
+
+  <!-- Grounds - rolling lawn -->
+  <rect x="0" y="430" width="800" height="210" fill="url(#grass)"/>
+
+  <!-- Trees in grounds -->
+  <g opacity="0.85">
+    <ellipse cx="80" cy="430" rx="40" ry="55" fill="#1a2e26"/>
+    <ellipse cx="80" cy="410" rx="32" ry="45" fill="#2d4a3e"/>
+    <rect x="76" y="450" width="8" height="40" fill="#0B1E3A"/>
+
+    <ellipse cx="720" cy="440" rx="50" ry="60" fill="#1a2e26"/>
+    <ellipse cx="720" cy="420" rx="38" ry="48" fill="#2d4a3e"/>
+    <rect x="716" y="460" width="8" height="40" fill="#0B1E3A"/>
+
+    <ellipse cx="160" cy="450" rx="25" ry="35" fill="#2d4a3e" opacity="0.7"/>
+    <ellipse cx="640" cy="450" rx="30" ry="38" fill="#2d4a3e" opacity="0.7"/>
+  </g>
+
+  <!-- Country house - Pitbauchlie -->
+  <g>
+    <!-- Left wing -->
+    <rect x="180" y="320" width="120" height="160" fill="url(#stone)" stroke="#8a7a5a" stroke-width="1"/>
+    <polygon points="170,320 240,260 310,320" fill="#5a3d2a"/>
+    <polygon points="170,320 240,270 310,320" fill="#704e34"/>
+
+    <!-- Right wing -->
+    <rect x="500" y="320" width="120" height="160" fill="url(#stone)" stroke="#8a7a5a" stroke-width="1"/>
+    <polygon points="490,320 560,260 630,320" fill="#5a3d2a"/>
+    <polygon points="490,320 560,270 630,320" fill="#704e34"/>
+
+    <!-- Central main body - taller -->
+    <rect x="300" y="280" width="200" height="200" fill="url(#stone)" stroke="#8a7a5a" stroke-width="1.5"/>
+    <polygon points="290,280 400,200 510,280" fill="#5a3d2a"/>
+    <polygon points="290,280 400,210 510,280" fill="#704e34"/>
+    <!-- Central pediment -->
+    <polygon points="360,275 400,250 440,275" fill="#FAF7F1" opacity="0.9"/>
+
+    <!-- Chimneys -->
+    <rect x="320" y="225" width="14" height="50" fill="#5a3d2a"/>
+    <rect x="466" y="225" width="14" height="50" fill="#5a3d2a"/>
+    <rect x="220" y="265" width="12" height="40" fill="#5a3d2a"/>
+    <rect x="568" y="265" width="12" height="40" fill="#5a3d2a"/>
+
+    <!-- Central building windows -->
+    <g>
+      <rect x="320" y="310" width="24" height="34" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.85"/>
+      <rect x="356" y="310" width="24" height="34" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+      <rect x="420" y="310" width="24" height="34" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+      <rect x="456" y="310" width="24" height="34" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.85"/>
+
+      <rect x="320" y="380" width="24" height="34" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.7"/>
+      <rect x="356" y="380" width="24" height="34" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+      <!-- Door arched -->
+      <path d="M388 410 Q388 380 400 380 Q412 380 412 410 L412 460 L388 460 Z" fill="#5a3d2a"/>
+      <path d="M392 410 Q392 384 400 384 Q408 384 408 410 L408 456 L392 456 Z" fill="#704e34"/>
+
+      <rect x="420" y="380" width="24" height="34" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+      <rect x="456" y="380" width="24" height="34" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.7"/>
+
+      <!-- Top floor (dormers in roof) -->
+      <rect x="356" y="240" width="20" height="28" fill="#F4D898" opacity="0.7"/>
+      <rect x="424" y="240" width="20" height="28" fill="#F4D898" opacity="0.7"/>
+    </g>
+
+    <!-- Wing windows -->
+    <g>
+      <rect x="200" y="345" width="22" height="32" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+      <rect x="232" y="345" width="22" height="32" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.85"/>
+      <rect x="264" y="345" width="22" height="32" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+
+      <rect x="200" y="400" width="22" height="32" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.7"/>
+      <rect x="232" y="400" width="22" height="32" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+      <rect x="264" y="400" width="22" height="32" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.85"/>
+
+      <rect x="514" y="345" width="22" height="32" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.7"/>
+      <rect x="546" y="345" width="22" height="32" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+      <rect x="578" y="345" width="22" height="32" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.85"/>
+
+      <rect x="514" y="400" width="22" height="32" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+      <rect x="546" y="400" width="22" height="32" fill="#F4D898" stroke="#5a3d2a" stroke-width="0.8" opacity="0.7"/>
+      <rect x="578" y="400" width="22" height="32" fill="#0B1E3A" stroke="#5a3d2a" stroke-width="0.8"/>
+    </g>
+
+    <!-- Driveway -->
+    <path d="M380 480 L420 480 L450 640 L350 640 Z" fill="#a89b7c" opacity="0.6"/>
+  </g>
+
+  <!-- Ornamental garden -->
+  <g opacity="0.8">
+    <ellipse cx="240" cy="500" rx="30" ry="8" fill="#FAF7F1" opacity="0.5"/>
+    <ellipse cx="560" cy="500" rx="30" ry="8" fill="#FAF7F1" opacity="0.5"/>
+    <ellipse cx="240" cy="500" rx="20" ry="5" fill="#B58A3C" opacity="0.4"/>
+    <ellipse cx="560" cy="500" rx="20" ry="5" fill="#B58A3C" opacity="0.4"/>
+  </g>
+</svg>
