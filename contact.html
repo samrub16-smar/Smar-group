@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Smar Group</title>
+<meta name="description" content="Talk to Smar Group about hotel management, lease arrangements, or facilities management services. Confidential, no obligation conversations.">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230B1E3A'/><circle cx='16' cy='16' r='5' fill='%23B58A3C'/></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo">
+      <span class="logo__mark"></span>
+      Smar Group
+      <small>&nbsp;&nbsp;Hotels · Management · FM</small>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="management.html">Management</a></li>
+      <li><a href="lease.html">Lease & Exit</a></li>
+      <li><a href="hotels.html">Our Hotels</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav__cta">Speak to us →</a>
+    <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container page-hero__inner">
+    <div>
+      <div class="crumb fade-up"><a href="index.html">Smar Group</a> &nbsp;/&nbsp; Contact</div>
+      <h1 class="fade-up d1">
+        Let's <em>talk.</em>
+      </h1>
+    </div>
+    <div class="fade-up d2">
+      <p class="lead">
+        Every owner relationship starts with a single confidential conversation. Tell us
+        about your situation — we'll come back within one working day with a view on
+        whether (and how) we can help.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact info -->
+      <div class="contact-info" data-reveal>
+        <span class="eyebrow">Direct lines</span>
+        <h3 style="margin-top: 1.25rem;">No call centres.<br>No gatekeepers.</h3>
+        <p>
+          You'll be speaking directly with our leadership. Initial conversations are always
+          confidential, under NDA where you'd prefer, and there's no expectation of further
+          engagement unless we both agree there's a fit.
+        </p>
+
+        <div class="info-block">
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:sam@smrfm.co.uk">sam@smrfm.co.uk</a></div>
+        </div>
+        <div class="info-block">
+          <div class="label">Phone</div>
+          <div class="value"><a href="tel:+447947320604">07947 320604</a></div>
+        </div>
+        <div class="info-block">
+          <div class="label">Head office</div>
+          <div class="value">10 Minories<br>London EC3N 1BJ</div>
+        </div>
+        <div class="info-block">
+          <div class="label">Hours</div>
+          <div class="value">Mon–Fri · 9am to 6pm<br><span style="font-family: var(--body); font-size: 0.9rem; color: var(--text-muted); font-weight: 400;">Out of hours for urgent FM enquiries</span></div>
+        </div>
+
+        <div style="margin-top: 2.5rem; padding: 1.5rem; background: var(--ink); color: var(--paper); border-radius: 2px;">
+          <div style="font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem;">For hotel owners</div>
+          <p style="font-size: 0.92rem; color: rgba(247, 244, 238, 0.85); margin: 0;">
+            If you'd like an indicative valuation, lease rent estimate or management
+            proposal, share trading figures (P&L, occupancy, ADR) with your initial message
+            and we'll send a preliminary view within 48 hours under NDA.
+          </p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form class="contact-form" id="enquiry-form" data-reveal>
+        <h3 style="margin-bottom: 0.5rem;">Send a confidential enquiry</h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 2rem;">
+          All fields are optional — share what you're comfortable sharing.
+        </p>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith">
+          </div>
+          <div class="field">
+            <label for="company">Company / hotel</label>
+            <input type="text" id="company" name="company" placeholder="The Old Manor Hotel Ltd">
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@oldmanor.co.uk">
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="07000 000000">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="interest">What are you exploring?</label>
+          <select id="interest" name="interest">
+            <option>I'd like to explore management</option>
+            <option>I'd like to lease my hotel to Smar Group</option>
+            <option>I'm interested in a hybrid arrangement</option>
+            <option>I need FM / staffing services for my hotel</option>
+            <option>I'm not sure yet — let's just talk</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="rooms">Approx. room count</label>
+            <select id="rooms" name="rooms">
+              <option>Under 20</option>
+              <option>20–40</option>
+              <option>40–80</option>
+              <option>80–150</option>
+              <option>150+</option>
+              <option>Not applicable</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="location">Hotel location</label>
+            <input type="text" id="location" name="location" placeholder="City, county">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Anything else we should know?</label>
+          <textarea id="message" name="message" placeholder="Trading history, timeline, what's driving the conversation, what a good outcome looks like for you..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">
+          Send enquiry
+          <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+
+        <p style="font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.1em; color: var(--text-muted); margin-top: 1.5rem; text-align: center;">
+          ALL ENQUIRIES TREATED IN STRICT CONFIDENCE · NDA AVAILABLE ON REQUEST
+        </p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ / What happens next -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <div class="sec-head__left">
+        <span class="eyebrow">What happens next</span>
+        <h2>The first<br><em class="script">conversation.</em></h2>
+      </div>
+      <div class="sec-head__right">
+        <p>
+          We've intentionally kept the early stages light. There's no pitch deck, no big team
+          on a Zoom call. Just an honest exchange about whether the structures we offer might
+          fit what you're trying to achieve.
+        </p>
+      </div>
+    </div>
+
+    <div class="process">
+      <div class="process__step" data-reveal>
+        <span class="num">DAY 01</span>
+        <h4>You send a message</h4>
+        <p>Even a paragraph is enough. We'll respond within one working day acknowledging and proposing a call time.</p>
+      </div>
+      <div class="process__step" data-reveal>
+        <span class="num">WEEK 01</span>
+        <h4>60-minute discovery call</h4>
+        <p>Hosted by group leadership. We talk through your situation, your goals, the property, and which structures might fit.</p>
+      </div>
+      <div class="process__step" data-reveal>
+        <span class="num">WEEK 02–04</span>
+        <h4>Indicative proposal</h4>
+        <p>If we both want to take it further, we share an NDA, review your trading history, and produce a written proposal with indicative numbers.</p>
+      </div>
+      <div class="process__step" data-reveal>
+        <span class="num">WEEK 04+</span>
+        <h4>Heads of terms</h4>
+        <p>If the proposal lands, we agree heads of terms, instruct legals, and move to formal documentation. Operational handover typically follows 30–60 days later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <span class="logo__mark"></span>
+          Smar Group
+          <small>&nbsp;&nbsp;Hotels · Mgmt · FM</small>
+        </a>
+        <p>A UK hotel operator and management partner. We run hotels for owners who want their property professionally operated — without the daily grind.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Partnership</h5>
+        <ul>
+          <li><a href="management.html">Management</a></li>
+          <li><a href="lease.html">Lease & Exit</a></li>
+          <li><a href="services.html">FM Services</a></li>
+          <li><a href="about.html">Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Portfolio</h5>
+        <ul>
+          <li><a href="hotels.html#manor">Manor Hotel Exmouth</a></li>
+          <li><a href="hotels.html#pitbauchlie">Pitbauchlie House</a></li>
+          <li><a href="hotels.html#balgeddie">Balgeddie House</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="mailto:sam@smrfm.co.uk">sam@smrfm.co.uk</a></li>
+          <li>07947 320604</li>
+          <li>10 Minories, London EC3N 1BJ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 SMAR GROUP — ALL RIGHTS RESERVED</span>
+      <span>Smar Hotels Ltd · Smar Hotels & Leisure Ltd · SMR Facilities Management Ltd</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
