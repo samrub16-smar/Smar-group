@@ -209,17 +209,25 @@ p { color: var(--text-soft); }
 }
 .nav.on-light .logo { color: var(--ink); }
 
-/* Logo mark — Option C: concentric circles with italic 's' */
+/* Logo mark — simple bronze circle with cream dot */
 .logo__mark {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
+  background: var(--bronze);
+  position: relative;
+  border-radius: 50%;
   flex-shrink: 0;
-  background-image: url('logo-mark.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.logo__mark::after { content: none; }
+.logo__mark::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--cream);
+}
 .logo__text {
   font-family: var(--display);
   font-size: 1.42rem;
@@ -691,22 +699,22 @@ p { color: var(--text-soft); }
   flex-grow: 1;
 }
 .track__list li {
-  padding: 0.85rem 0;
+  padding: 0.85rem 0 0.85rem 1.3rem;
   border-bottom: 1px solid var(--line);
   font-size: 0.93rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.85rem;
   color: var(--text);
+  position: relative;
+  line-height: 1.5;
 }
 .track__list li::before {
   content: '';
+  position: absolute;
+  left: 0;
+  top: 1.4rem;
   width: 6px;
   height: 6px;
   background: var(--bronze);
   border-radius: 50%;
-  margin-top: 0.55rem;
-  flex-shrink: 0;
 }
 .track__list li:last-child { border-bottom: none; }
 .track__cta {
@@ -1158,12 +1166,6 @@ p { color: var(--text-soft); }
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
-@media (prefers-reduced-motion: reduce) {
-  .logo-marquee__track,
-  .hero__bg img,
-  .page-hero__bg img { animation: none; }
-}
-
 /* ---------- Quote ---------- */
 .quote {
   text-align: center;
@@ -1593,6 +1595,13 @@ p { color: var(--text-soft); }
   .footer__top { grid-template-columns: 1fr; }
   .field-row { grid-template-columns: 1fr; }
   .dash__kpis { grid-template-columns: 1fr 1fr; }
+
+  /* Hybrid KPI block — stack columns, reduce padding, allow wrapping */
+  .kpi-block { grid-template-columns: 1fr; gap: 2rem; }
+  .kpi-card { padding: 1.75rem 1.25rem; }
+  .kpi-card__title { flex-wrap: wrap; gap: 0.5rem; }
+  .kpi-row { flex-wrap: wrap; gap: 0.35rem 1rem; }
+  .kpi-row .val { white-space: normal; text-align: left; }
 }
 
 @media (max-width: 500px) {
@@ -1614,3 +1623,12 @@ p { color: var(--text-soft); }
   box-shadow: 0 12px 30px rgba(15, 22, 19, 0.1);
 }
 .nav__links.open a { color: var(--text); }
+
+/* ---------- Reduced motion (placed at end so it beats later animation declarations) ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .logo-marquee .logo-marquee__track,
+  .hero .hero__bg img,
+  .page-hero .page-hero__bg img {
+    animation: none !important;
+  }
+}
